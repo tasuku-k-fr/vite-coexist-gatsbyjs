@@ -15,6 +15,7 @@ jspm_packages/
 typings/
 build/Release
 bower_components
+public/
 .npm
 .cache/
 .vite/
