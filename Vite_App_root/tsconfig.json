@@ -1,0 +1,23 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["../src/*"],
+      // src ディレクトリへのエイリアスは、Vite_App_root から見て一つ上の階層になるため '../' を追加
+      "@components/*": ["../src/component/*"],
+      "@scss/*": ["../src/scss/*"],
+      "@images/*": ["../src/original-images/*"],
+      "@scripts/*": ["../src/script/*"],
+      // @vite_app_root は、この tsconfig.json がある場所自体を指すので './*' に変更
+      "@vite_app_root/*": ["./*"]
+    },
+    "composite": true,
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "include": ["../src", "./vite-env.d.ts"], // src ディレクトリと vite-env.d.ts の新しいパス
+
+}
