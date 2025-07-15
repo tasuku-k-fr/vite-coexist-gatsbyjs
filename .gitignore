@@ -7,13 +7,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
+# Dependency Directories & Build Outputs
+node_modules/
+dist/ # 'dist' を含む一般的なビルド出力ディレクトリ
 dist-ssr
-*.local
+jspm_packages/
+typings/
+build/Release
+bower_components
+.npm
+.cache/
+.vite/
+.next/
+.nuxt/
+public/ # 共通のビルド出力ディレクトリ
 
-# Editor directories and files
-.vscode/*
+# Editor / OS Specific Files
+.vscode/
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -22,3 +32,47 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Temporary / Cache Files
+*.local
+*.tsbuildinfo
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+.grunt
+lib-cov
+coverage/
+*.lcov
+.nyc_output
+.lock-wscript
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+GeneratedFiles
+
+# Environment Variables
+.env
+.env.test
+.env.*
+
+# Package & Report Files
+*.tgz
+.yarn-integrity
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+gitleaks-report.json
+gitleaks-report[0-9].json
+gitleaks-report[0-9][0-9].json
+
+# Project Specific Data & Generated Files
+kuroiwa-olds
+# gatsby-types.ts
+# src/__generated__/gatsby-types.ts
+POST_APP/data
+static/cases/entries.json
+static/events/entries.json
+Tools/casesDataSaver/*_all_cases_article_list.json
