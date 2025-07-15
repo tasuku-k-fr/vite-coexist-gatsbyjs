@@ -1,7 +1,8 @@
 {
   "name": "vite-project",
   "private": true,
-  "version": "0.0.0",
+  "author": "tasuku kuroiwa",
+  "version": "0.1.0",
   "scripts": {
     "predev": "node Vite_App_root/generate-routes.js",
     "prebuild": "node Vite_App_root/generate-routes.js",
